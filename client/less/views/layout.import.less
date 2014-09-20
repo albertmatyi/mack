@@ -1,11 +1,52 @@
 html, body {
 	height: 100%;
-}
-#main {
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
 	overflow: hidden;
+}
+@logo-h: 10vh;
+#main {
+	.position(0, 0,0,0);
+	overflow: hidden;
+	overflow: auto;
+}
+
+.header {
+	height: @logo-h;
+	text-align: left;
+	.logo-wrapper {
+		height: 100%;
+		.logo {
+			max-height: 100%;
+			max-width: 100%;
+		}
+	}
+	.task {
+		
+	}
+	.ranger {
+		.image {
+			max-width: 100%;
+			max-height: 100%;
+		}
+	}
+	.monsters {
+		text-align: center;
+		.monster{
+			display: inline-block;
+			position: relative;
+			height: 100%;
+			.image {
+				max-height: 100%;
+			}
+			.dead {
+				.position();
+				background-color: rgba(255, 0, 0, .7);
+			}
+		}
+	}
+}
+.victory{
+	.position();
+	background-image: url(/victory.jpg);
+	background-size: cover;
+	background-position: center;
 }

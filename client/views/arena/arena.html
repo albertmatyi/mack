@@ -1,0 +1,32 @@
+<template name="arena">
+	<div class="header row">
+		<div class="col-xs-6 col-sm-2 logo-wrapper">
+			<img src="/logo.png" alt="Power rangers" class="logo">
+		</div>
+
+		{{#with player}} 
+		<div class="ranger col-xs-6 col-sm-2">
+			<img src="{{image}}" alt="" class="image">
+		</div>
+		{{/with}}
+		
+		{{> monsters}}
+	</div>	
+</template>
+
+<template name="monsters">
+	<div class="monsters">
+		{{#each monsters}}
+		{{>monster}}
+		{{/each}}
+	</div>
+</template>
+
+<template name="monster">
+	<div class="monster">
+		<img src="{{image}}" alt="" class="image">
+		{{#if dead}}
+		<div class="dead"></div>
+		{{/if}}
+	</div>
+</template>

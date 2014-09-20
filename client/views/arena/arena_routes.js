@@ -1,10 +1,10 @@
 Router.map(function() {
-  this.route('find', {
-    path: '/find',
+  this.route('arena', {
+    path: '/arena',
     onBeforeAction: function() {
-      if (!Session.get('player.id')) {
-        this.redirect('/');
-      }
+      // if (!Session.get('player.id')) {
+      //   this.redirect('/');
+      // }
     },
     data: function() {
       var pid = Session.get('player.id');
@@ -13,7 +13,8 @@ Router.map(function() {
       };
     },
     onAfterAction: function() {
-      App.map.init();
+      Session.set('map.onScreen', true);
     }
   });
 });
+Session.set('map.onScreen', false);

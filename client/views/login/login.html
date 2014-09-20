@@ -1,20 +1,28 @@
 <template name="login">
-	<div class="jumbotron">
-		<h1>Hello!</h1>
-		<p>And you would be:</p>
-		<p>
-			<input type="text" class="player-name" placeholder="Joe / Jane / Jill / Jack">
-		</p>
-		<p>
-			<a href="" class="play btn btn-primary">Let's get going!</a>
-		</p>
-		<p>
-			<ul>
-				<li>lat: {{coords.latitude}}</li>
-				<li>long: {{coords.longitude}}</li>
-				<li>delta: {{coords.delta}}</li>
-			</ul>
+	<div class="header row">
+		<div class="col-xs-12 col-sm-2">
+			<img src="/logo.png" alt="Power rangers" class="logo">
+		</div>
+		<div class="col-xs-12 col-sm-10">
+			<div class="task">
+				<p>Choose ranger!</p>
+			</div>
+		</div>
+	</div>
+	{{>rangers}}
+</template>
+<template name="rangers">
+	<div class="rangers row">
+		{{#each rangers}}
+		{{> ranger}}
+		{{/each}}
+	</div>
+</template>
 
-		</p>
+<template name="ranger">
+	<div class="ranger col-xs-6 col-md-4">
+		<div class="image-wrapper">
+			<img src="{{image}}" alt="" class="image">
+		</div>
 	</div>
 </template>

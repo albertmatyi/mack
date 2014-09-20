@@ -7,3 +7,9 @@ $(document).ready(function($) {
 	// console.log(url);
 	// $('head').append('<script type="text/javascript" src="' + url + '"></script>');
 });
+
+Template.layout.helpers({
+	mapOnScreen: function () {
+		return Session.get('map.onScreen') ? 'on-screen':'off-screen';
+	}
+});

@@ -1,8 +1,14 @@
+@hh: 20vh;
 #map {
-	.position(20vh, 0, 0, 0);
+	.position(@hh, 0, 0, 0);
 	.transition(transform .3s ease);
 	transform: translateZ(0) translateY(0) !important;
 	&.off-screen {
 		transform: translateZ(0) translateY(100%) !important;
+	}
+}
+#main {
+	.header {
+		height: @hh;
 	}
 }

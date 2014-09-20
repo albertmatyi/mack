@@ -48,12 +48,14 @@
         "bootbox",
         "Package",
         "Async",
+        "Tracker",
         "Migrations",
         "EventEmitter",
         "GMaps",
     // custom packages
         "App",
     // app
-        "PlayersCollection"
+        "PlayersCollection",
+        "MonstersCollection"
     ]
 }
