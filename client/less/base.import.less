@@ -1,0 +1,22 @@
+.no-transition {
+	&, * {
+		.transition(none ~'!important');
+	}
+}
+.btn {
+	&.btn-ghost {
+		.box-shadow(none);
+		background-color: transparent;
+		color: @btn-transparent-color;
+		border: @btn-transparent-border;
+	}
+}
+body {
+	.user-select(none);
+	background-color: white;
+	// background-image: url(/imgs/steel.jpg);
+}
+a:hover, a:focus {
+	text-decoration: none;
+	color: lighten(@brand-primary, 10%);
+}

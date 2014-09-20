@@ -1,0 +1,8 @@
+.assets/
+.openshift/
+.uploads/
+.demeteorized/
+app.sublime-workspace
+.meteorite_private/
+public/app.tar.gz
+public/media.tar.gz

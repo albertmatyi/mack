@@ -10,4 +10,8 @@ iron:router
 simison:bootstrap3-less
 accounts-ui
 accounts-google
+noorderstorm:hammer
+less
+font-awesome-4-less
+app-component
 

@@ -1,0 +1,35 @@
+{
+	"folders":
+	[
+		{
+			"follow_symlinks": true,
+			"path": ".",
+			"folder_exclude_patterns": [
+				".meteor/local",
+				".npm",
+				".assets",
+				".build",
+				".build.*",
+				".uploads",
+				".deployment/deployable",
+				"node_modules",
+				"packages/GAnalytics",
+				"packages/accounts-ui-bootstrap-3",
+				"packages/fast-render",
+				"packages/font-awesome-4-less",
+				"packages/moment",
+				"packages/npm",
+				"packages/blaze-layout",
+				"packages/hammer",
+				"packages/iron-router",
+				"packages/iron-layout",
+				"packages/iron-transitioner",
+				"public/fontawesome",
+				"packages/marked",
+				"packages/pdfjs",
+				"public/pdfjs",
+				".demeteorized",
+				".openshift"]
+		}
+	]
+}

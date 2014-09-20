@@ -1,0 +1,32 @@
+.rotate3d(@x, @y, @z, @deg) {
+  -webkit-transform: rotate3d(@x, @y, @z, @deg);
+  -moz-transform: rotate3d(@x, @y, @z, @deg);
+  -ms-transform: rotate3d(@x, @y, @z, @deg);
+  transform: rotate3d(@x, @y, @z, @deg);
+}
+.no-transform(@important: ~'') {
+  -webkit-transform: none @important;
+  -moz-transform: none @important;
+  -ms-transform: none @important;
+  transform: none @important;
+}
+
+.position(@top: 0, @right: @top, @bottom: @top, @left: @right, @position: absolute) {
+  position: @position;
+  top: @top;
+  left: @left;
+  right: @right;
+  bottom: @bottom;
+}
+
+.desaturate() {
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.random-color(){
+  @randomColor: `Math.floor(Math.random()*16777215).toString(16)`;
+  @colorHex: e(@randomColor);
+  @color: ~"#@{colorHex}";
+}
