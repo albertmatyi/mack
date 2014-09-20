@@ -50,14 +50,9 @@
         "Async",
         "Migrations",
         "EventEmitter",
+        "GMaps",
     // custom packages
-        "PDFJS",
-        "execSync",
-        "PDFViewer",
-        "fixie",
-        "Panel",
-        "Progress",
-        "File",
+        "App",
     // app
         "PlayersCollection"
     ]
