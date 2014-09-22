@@ -1,0 +1,7 @@
+i=0;MonstersCollection.find().forEach(function(m){
+setTimeout(function(){
+ PlayersCollection.update('blue', {$set: {coords: m.coords}});
+}, i++*1000);
+});
+
+Meteor.call('placeMonsters', 2, 0.0002)
